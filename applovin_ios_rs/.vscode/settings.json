@@ -1,0 +1,3 @@
+{
+    "rust-analyzer.cargo.target": "arm64-apple-ios"
+}

@@ -1,0 +1,22 @@
+[package]
+name = "applovin_ios_rs"
+version = "0.1.0"
+edition = "2024"
+build = "build.rs"
+readme = "../README.md"
+license = "MIT"
+authors = ["Thierry Berger <contact@thierryberger.com>"]
+documentation = "https://docs.rs/applovin_ios_rs"
+repository = "https://github.com/vrixyz/applovin_ios_rs"
+keywords = ["bevy", "gamedev", "mobile", "ios", "swift", "ad"]
+description = "Rust crate and Swift Package to provide access to iOS AppLovin SDK"
+
+[lib]
+name = "applovin_ios_rs"
+crate-type = ["staticlib", "rlib"]
+
+[dependencies]
+swift-bridge = "0.1"
+
+[build-dependencies]
+swift-bridge-build = "0.1"
