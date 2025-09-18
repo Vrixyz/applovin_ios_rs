@@ -4,14 +4,17 @@
 [![docs.rs](https://docs.rs/applovin_ios_rs/badge.svg)](https://docs.rs/applovin_ios_rs)
 -->
 
+⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+Caution: NOT WORKING YET!
+⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+
 Rust crate and Swift Package Module for Applovin Ads on iOS.
 
 <!-- TODO: Demo -->
 
 ## Features
 
-* reads safe area on app start
-* easy access via a resource
+* call into applovin SDK
 * noop on non-ios platforms (no `cfg`s needed in your app code)
 
 ## Instructions
