@@ -18,7 +18,8 @@ Rust crate and Swift Package Module for Applovin Ads on iOS.
 
 1. Add to XCode: Add SPM (Swift Package Manager) dependency
 2. Add Rust dependency
-3. Follow Applovin integration
+3. Add environment variables
+4. Follow Applovin integration
 
 ### 1. Add to XCode
 
@@ -37,7 +38,12 @@ or
 applovin_ios_rs = { version = "=0.3.0" }
 ```
 
-### 3. Follow Applovin integration
+### 3. Add environment variables
+
+We'll add our environment variables in Xcode:
+copy the env_example.xcconfig in a release and debug variants and link them in your project's configurations for debug and release final target.
+
+### 4. Follow Applovin integration
 
 1. Follow iOS specific instructions that you have to do in Xcode files: https://developers.axon.ai/en/max/ios/overview/integration#skadnetwork
    1. Permissions
@@ -53,6 +59,8 @@ applovin_ios_rs = { version = "=0.3.0" }
 ### library not found
 
 Showing All Messages
+
+```
 Ld .../mobile.debug.dylib normal (in target 'mobile' from project 'mobile')
 
 ld: library 'mobile' not found
@@ -85,6 +93,12 @@ Make sure your app target (the one using the Swift Package) has AppLovinSDK link
 Check Build Phases → Link Binary With Libraries.
 
 AppLovinSDK.framework (from Pods) should be there.
+
+
+### No ads are shown
+
+Check out documentation of th rust crate, make sure you call initialization functions when the app finishes launching, and that it's successful. Try verbose options and check logs!
+
 
 # License
 
