@@ -1,5 +1,5 @@
 use std::ffi;
 
 unsafe extern "C" {
-    pub(crate) fn swift_custom();
+    pub(crate) fn initialize_sdk();
 }

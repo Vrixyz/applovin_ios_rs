@@ -3,9 +3,9 @@
 #[cfg(target_os = "ios")]
 mod native;
 
-#[cfg(target_os = "ios")]
-pub fn call_swift_custom() {
+pub fn initialize_sdk() {
+    #[cfg(target_os = "ios")]
     unsafe {
-        native::swift_custom();
+        native::initialize_sdk();
     }
 }
