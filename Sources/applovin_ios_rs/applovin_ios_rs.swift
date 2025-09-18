@@ -1,11 +1,6 @@
-import RustXcframework
-public func ad_did_finish() {
-    __swift_bridge__$ad_did_finish()
+import UIKit
+
+@_cdecl("swift_custom")
+public func custom() {
+    print("Hello from swift!")
 }
-@_cdecl("__swift_bridge__$swift_show_ad")
-func __swift_bridge__swift_show_ad () {
-    swift_show_ad()
-}
-
-
-

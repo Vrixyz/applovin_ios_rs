@@ -1,6 +1,11 @@
+#![doc = include_str!("../README.md")]
+
+#[cfg(target_os = "ios")]
 mod native;
 
-pub fn swift_show_ad() {
-    println!("Calling into Swift to show an ad...");
-    native::swift_show_ad();
+#[cfg(target_os = "ios")]
+pub fn call_swift_custom() {
+    unsafe {
+        native::swift_custom();
+    }
 }
